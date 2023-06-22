@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 // these classes will alway be applied to this paragraphVariants to make it reusable
 // and then we can allow some variants to be applied
 const headingVariants = cva(
-  "text-black dark: text-white text-center lg:text-left font-extrabold leading-tight tracking-tighter",
+  "text-black dark:text-white text-center lg:text-left font-extrabold leading-tight tracking-tighter",
   {
     variants: {
       size: {
