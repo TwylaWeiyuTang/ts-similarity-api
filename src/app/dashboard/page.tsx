@@ -2,6 +2,7 @@ import ApiDashboard from "@/components/ApiDashboard";
 import RequestApiKey from "@/components/RequestApiKey";
 import { authOptions } from "@/lib/auth";
 import { db } from "@/lib/db";
+import { openai } from "@/lib/openai";
 import { Metadata } from "next";
 import { getServerSession } from "next-auth";
 import { notFound } from "next/navigation";
