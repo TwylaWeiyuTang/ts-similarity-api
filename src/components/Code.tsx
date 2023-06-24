@@ -1,12 +1,12 @@
 "use client";
 import { FC, useEffect, useState } from "react";
-import { type Language, themes, Highlight } from "prism-react-renderer";
+import { themes, Highlight } from "prism-react-renderer";
 import { useTheme } from "next-themes";
 
 interface CodeProps {
   code: string;
   show: boolean;
-  language: Language;
+  language: string;
   animationDelay?: number;
   animated?: boolean;
 }

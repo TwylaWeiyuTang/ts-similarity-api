@@ -12,7 +12,7 @@ import ApiKeyOptions from "./ApiKeyOptions";
 
 const ApiDashboard = async () => {
   const user = await getServerSession(authOptions);
-  if (!user) notFound();
+  if (!user) return notFound();
 
   const apiKeys = await db.apiKey.findMany({
     where: {
@@ -22,7 +22,7 @@ const ApiDashboard = async () => {
 
   const activeApiKey = apiKeys.find((apiKey) => apiKey.enabled);
 
-  if (!activeApiKey) notFound();
+  if (!activeApiKey) return notFound();
 
   const userRequests = await db.apiRequest.findMany({
     where: {
@@ -43,7 +43,6 @@ const ApiDashboard = async () => {
       <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start items-center">
         <Paragraph>Your API key:</Paragraph>
         <Input className="w-fit truncate" readOnly value={activeApiKey.key} />
-        {/* add options to create new or revoke */}
         <ApiKeyOptions
           apiKeyId={activeApiKey.id}
           apiKeyKey={activeApiKey.key}

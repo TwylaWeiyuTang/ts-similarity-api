@@ -5,9 +5,14 @@ import { NextResponse } from "next/server";
 import { getToken } from "next-auth/jwt";
 
 const redis = new Redis({
-  url: process.env.REDIS_URL,
-  token: process.env.REDIS_SECRET,
+  url: "https://unified-elephant-39585.upstash.io",
+  token:
+    "AZqhACQgYjE2OTg0NzQtNzM0MS00NDhjLWE2ODYtMGY3NmQwZGJkYmQzYTE3MmFiNTUwYmEyNGViMWI1ODA3YmM4OTYwYzI3ODU=",
 });
+
+// const redis = new Redis({
+//   token: process.env.REDIS_SECRET,
+// });
 
 // give user 5 requests per hour
 const ratelimit = new Ratelimit({
