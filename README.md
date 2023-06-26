@@ -15,10 +15,10 @@ This is a full-stack [Next.js](https://nextjs.org/) project.
 - Open AI text-embedding-02 model
 
 ## Light Mode
-(https://twyla-personal-projects.s3.eu-west-2.amazonaws.com/detex-home-light.png)
+<img src='https://twyla-personal-projects.s3.eu-west-2.amazonaws.com/detex-home-light.png' alt='detex-home-light-mode' />
 
 ## Dark Mode
-(https://twyla-personal-projects.s3.eu-west-2.amazonaws.com/detex-home-dark.png)
+<img src='https://twyla-personal-projects.s3.eu-west-2.amazonaws.com/detex-home-dark.png' alt='detex-home-dark-mode' />
 
 ## Acknowledgements
 Inspired and learned a lot from [Josh](https://www.youtube.com/@joshtriedcoding)
