@@ -4,7 +4,14 @@ import { Inter } from "next/font/google";
 import Providers from "@/components/Providers";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "@/components/ui/Toast";
+import Background from "@/components/Background";
+import { Metadata } from "next";
 const inter = Inter({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "Similarity API ",
+  description: "Free & open-source text similarity API",
+};
 
 export default function RootLayout({
   children,
@@ -22,6 +29,7 @@ export default function RootLayout({
           <Toaster position="bottom-right" />
           {/* ts-expect-error Server Component */}
           <Navbar />
+          <Background />
         </Providers>
 
         {/* allow more height on  mobile devices */}

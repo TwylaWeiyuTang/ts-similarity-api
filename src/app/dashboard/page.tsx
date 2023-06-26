@@ -25,7 +25,7 @@ const page = async ({}) => {
   });
 
   return (
-    <div className="max-w-7xl mx-auto mt-16">
+    <div className="relative max-w-7xl mx-auto mt-16 z-10">
       {apiKey ? (
         // @ts-ignore
         <ApiDashboard />

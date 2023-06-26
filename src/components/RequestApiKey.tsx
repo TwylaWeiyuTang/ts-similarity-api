@@ -43,7 +43,7 @@ const RequestApiKey: FC = ({}) => {
   };
 
   return (
-    <div className="container md:max-w-2xl">
+    <div className="container md:max-w-2xl h-[80vh] flex flex-col justify-center">
       <div className="flex flex-col gap-6 items-center">
         <Key className="mx-auto h-12 w-12 text-gray-400" />
         <LargeHeading>Request your API key</LargeHeading>
@@ -69,7 +69,7 @@ const RequestApiKey: FC = ({}) => {
             placeholder="Request and API key to display it here!"
           />
         </div>
-        <div className="mt-3 flex justify-center sm:mt-0 sm:ml-4 sm:flex-shrink-0">
+        <div className="mt-6 flex justify-center sm:mt-0 sm:ml-4 sm:flex-shrink-0">
           <Button disabled={!!apiKey} isLoading={isCreating}>
             Request key
           </Button>

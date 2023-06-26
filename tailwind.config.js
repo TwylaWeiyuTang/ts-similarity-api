@@ -14,7 +14,7 @@ module.exports = {
       center: true,
       padding: "1.5rem",
       screens: {
-        "2xl": "1360px",
+        "2xl": "1440px",
       },
     },
     extend: {
@@ -23,6 +23,8 @@ module.exports = {
       },
       colors: {
         ...colors,
+        green: "#4AEB94",
+        "pale-blue": "#16567a",
         "light-gold": "#f5bc51",
         "dark-gold": "#533519",
       },

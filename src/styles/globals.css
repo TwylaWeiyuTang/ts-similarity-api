@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .dark .three-d {
-  text-shadow: 0px 5px 0px #533519;
+  text-shadow: none;
 }
 
 .three-d {
