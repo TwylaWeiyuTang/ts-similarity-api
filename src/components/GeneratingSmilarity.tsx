@@ -121,7 +121,7 @@ const GeneratingSmilarity = ({ activeApiKey }: GeneratingSimilarityProps) => {
       {score && (
         <div className="flex flex-row items-center justify-center pb-6">
           <Paragraph className="max-w-full mt-10 text-left lg:text-center">
-            The similarity between these two texts are: &nbsp;
+            The similarity between these two texts is: &nbsp;
           </Paragraph>
           <Paragraph className="mt-10 font-bold" size={"lg"}>
             {score}
